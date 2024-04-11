@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     loginpage.cpp \
+    mainpage.cpp \
     signuppage.cpp
 
 HEADERS += \
     loginpage.h \
+    mainpage.h \
     signuppage.h
 
 FORMS += \
     loginpage.ui \
+    mainpage.ui \
     signuppage.ui
 
 # Default rules for deployment.
