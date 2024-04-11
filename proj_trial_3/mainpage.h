@@ -15,6 +15,12 @@ public:
     explicit MainPage(QWidget *parent = nullptr);
     ~MainPage();
 
+signals:
+    void SwitchToLogin();
+
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::MainPage *ui;
 };
