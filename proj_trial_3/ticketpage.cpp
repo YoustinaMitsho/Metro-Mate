@@ -1,13 +1,18 @@
-#include "mainpage.h"
-#include "ui_mainpage.h"
+#include "ticketpage.h"
+#include "ui_ticketpage.h"
+#include <QFile>
+#include <QTextStream>
 
-MainPage::MainPage(QWidget *parent)
+TicketPage::TicketPage(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::MainPage)
+    , ui(new Ui::TicketPage)
 {
     ui->setupUi(this);
     setWindowTitle("Metro");
     setWindowIcon(QIcon(":/images/img/download.png"));
+
+    // hashing Card Code
+    ui->code->setEchoMode(QLineEdit::EchoMode::Password);
 
     // adding pics
     QPixmap i(":/images/img/map-point.png");
@@ -31,44 +36,62 @@ MainPage::MainPage(QWidget *parent)
     QPixmap m(":/images/img/download.png");
     ui->metro->setPixmap(m.scaled(ui->metro->width(), ui->metro->height(),Qt::KeepAspectRatio));
 
+    QPixmap r(":/images/img/422833-PE4141-817 (2).png");
+    ui->receipt->setPixmap(r.scaled(ui->receipt->width(), ui->receipt->height(),Qt::KeepAspectRatio));
+
+    // adding stations to combomoxes
+    QFile file("E:/QT/trial/proj_trial_3/img/stations_name.txt");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Failed to open the file:" << file.errorString();
+    }
+    QTextStream in(&file);
+    while (!in.atEnd()) {
+        QString station = in.readLine();
+        ui->start->addItem(station);
+        ui->end->addItem(station);
+    }
+    file.close();
 }
 
-MainPage::~MainPage()
+TicketPage::~TicketPage()
 {
     delete ui;
 }
 
-void MainPage::on_pushButton_clicked()
+void TicketPage::on_pushButton_clicked()
 {
     emit SwitchToLogin();
 }
 
-void MainPage::on_pushButton_2_clicked()
+
+void TicketPage::on_pushButton_2_clicked() // home
 {
-    emit SwitchToTicket();
+    emit SwitchToHome();
 }
 
-
-void MainPage::on_pushButton_4_clicked() // subscription
+void TicketPage::on_pushButton_4_clicked() //sub
 {
     emit SwitchToSub();
 }
 
 
-void MainPage::on_pushButton_5_clicked() // state
+void TicketPage::on_pushButton_5_clicked() //state
 {
     emit SwitchToState();
 }
 
 
-void MainPage::on_pushButton_3_clicked() // user
+void TicketPage::on_pushButton_6_clicked() //user
 {
     emit SwitchToUser();
 }
 
 
-void MainPage::on_pushButton_6_clicked() // search
+void TicketPage::on_code_editingFinished()
 {
-    emit SwitchToSearch();
+    if(ui->code->text() == "123")
+    {
+        emit SwitchToVerf();
+    }
 }
 

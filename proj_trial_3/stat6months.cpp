@@ -1,9 +1,9 @@
-#include "mainpage.h"
-#include "ui_mainpage.h"
+#include "stat6months.h"
+#include "ui_stat6months.h"
 
-MainPage::MainPage(QWidget *parent)
+stat6months::stat6months(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::MainPage)
+    , ui(new Ui::stat6months)
 {
     ui->setupUi(this);
     setWindowTitle("Metro");
@@ -30,45 +30,51 @@ MainPage::MainPage(QWidget *parent)
 
     QPixmap m(":/images/img/download.png");
     ui->metro->setPixmap(m.scaled(ui->metro->width(), ui->metro->height(),Qt::KeepAspectRatio));
-
 }
 
-MainPage::~MainPage()
+stat6months::~stat6months()
 {
     delete ui;
 }
 
-void MainPage::on_pushButton_clicked()
+void stat6months::on_pushButton_2_clicked()
 {
-    emit SwitchToLogin();
+    emit SwitchToHome();
 }
 
-void MainPage::on_pushButton_2_clicked()
+
+void stat6months::on_pushButton_5_clicked()
 {
     emit SwitchToTicket();
 }
 
 
-void MainPage::on_pushButton_4_clicked() // subscription
+void stat6months::on_pushButton_4_clicked()
 {
     emit SwitchToSub();
 }
 
 
-void MainPage::on_pushButton_5_clicked() // state
-{
-    emit SwitchToState();
-}
-
-
-void MainPage::on_pushButton_3_clicked() // user
+void stat6months::on_pushButton_6_clicked()
 {
     emit SwitchToUser();
 }
 
 
-void MainPage::on_pushButton_6_clicked() // search
+void stat6months::on_pushButton_clicked()
 {
-    emit SwitchToSearch();
+    emit SwitchToLogin();
+}
+
+
+void stat6months::on_m1_clicked()
+{
+    emit SwitchTo1Months();
+}
+
+
+void stat6months::on_m3_clicked()
+{
+    emit SwitchTo3Months();
 }
 

@@ -9,20 +9,53 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    historypage.cpp \
     main.cpp \
     loginpage.cpp \
     mainpage.cpp \
-    signuppage.cpp
+    renewsub.cpp \
+    searchpage.cpp \
+    signuppage.cpp \
+    stat1month.cpp \
+    stat3months.cpp \
+    stat6months.cpp \
+    submanage.cpp \
+    subscription.cpp \
+    ticketpage.cpp \
+    userdata.cpp \
+    verfication.cpp
 
 HEADERS += \
+    historypage.h \
     loginpage.h \
     mainpage.h \
-    signuppage.h
+    renewsub.h \
+    searchpage.h \
+    signuppage.h \
+    stat1month.h \
+    stat3months.h \
+    stat6months.h \
+    submanage.h \
+    subscription.h \
+    ticketpage.h \
+    userdata.h \
+    verfication.h
 
 FORMS += \
+    historypage.ui \
     loginpage.ui \
     mainpage.ui \
-    signuppage.ui
+    renewsub.ui \
+    searchpage.ui \
+    signuppage.ui \
+    stat1month.ui \
+    stat3months.ui \
+    stat6months.ui \
+    submanage.ui \
+    subscription.ui \
+    ticketpage.ui \
+    userdata.ui \
+    verfication.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,3 +64,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc
+
+DISTFILES += \
+    img/stations_name.txt

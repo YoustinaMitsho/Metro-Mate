@@ -1,27 +1,27 @@
-#ifndef MAINPAGE_H
-#define MAINPAGE_H
+#ifndef TICKETPAGE_H
+#define TICKETPAGE_H
 
 #include <QDialog>
 
 namespace Ui {
-class MainPage;
+class TicketPage;
 }
 
-class MainPage : public QDialog
+class TicketPage : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit MainPage(QWidget *parent = nullptr);
-    ~MainPage();
+    explicit TicketPage(QWidget *parent = nullptr);
+    ~TicketPage();
 
 signals:
     void SwitchToLogin();
-    void SwitchToTicket();
+    void SwitchToHome();
     void SwitchToSub();
     void SwitchToState();
     void SwitchToUser();
-    void SwitchToSearch();
+    void SwitchToVerf();
 
 private slots:
     void on_pushButton_clicked();
@@ -32,12 +32,12 @@ private slots:
 
     void on_pushButton_5_clicked();
 
-    void on_pushButton_3_clicked();
-
     void on_pushButton_6_clicked();
 
+    void on_code_editingFinished();
+
 private:
-    Ui::MainPage *ui;
+    Ui::TicketPage *ui;
 };
 
-#endif // MAINPAGE_H
+#endif // TICKETPAGE_H
