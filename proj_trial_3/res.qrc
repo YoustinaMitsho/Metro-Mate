@@ -21,5 +21,6 @@
         <file>img/three.png</file>
         <file>img/ticket.png</file>
         <file>img/train.png</file>
+        <file>img/entrance.png</file>
     </qresource>
 </RCC>

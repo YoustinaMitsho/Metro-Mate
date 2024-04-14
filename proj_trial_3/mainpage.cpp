@@ -43,3 +43,32 @@ void MainPage::on_pushButton_clicked()
     emit SwitchToLogin();
 }
 
+void MainPage::on_pushButton_2_clicked()
+{
+    emit SwitchToTicket();
+}
+
+
+void MainPage::on_pushButton_4_clicked() // subscription
+{
+    emit SwitchToSub();
+}
+
+
+void MainPage::on_pushButton_5_clicked() // state
+{
+    emit SwitchToState();
+}
+
+
+void MainPage::on_pushButton_3_clicked() // user
+{
+    emit SwitchToUser();
+}
+
+
+void MainPage::on_pushButton_6_clicked() // search
+{
+    emit SwitchToSearch();
+}
+
