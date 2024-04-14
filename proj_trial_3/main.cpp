@@ -12,6 +12,10 @@
 #include "historypage.h"
 #include "searchpage.h"
 #include "verfication.h"
+#include"AdminHomeBage.h"
+#include"adminmanagemetroaddstation.h"
+#include"adminmanagemetrootions.h"
+#include "adminmanagemetroremovestation.h"
 
 #include <QApplication>
 
@@ -32,7 +36,54 @@ int main(int argc, char *argv[])
     HistoryPage hs;
     SearchPage sh;
     verfication v;
+    Admin ad;
+    AdminManageMetroOtions admm;
+    AdminManageMetroAddStation adStation;
+    AdminManageMetroRemoveStation adreStation;
 
+    adreStation.show();
+
+    QObject::connect(&adreStation, &AdminManageMetroRemoveStation::SwitchToAdminHome, [&](){
+        ad.show();
+        adreStation.hide();
+    });
+    QObject::connect(&adreStation, &AdminManageMetroRemoveStation::SwitchToLogin, [&](){
+        lp.show();
+        adreStation.hide();
+    });
+    QObject::connect(&adreStation, &AdminManageMetroRemoveStation::SwitchToMnageMetroOption, [&](){
+        admm.show();
+        adreStation.hide();
+    });
+    QObject::connect(&adStation, &AdminManageMetroAddStation::SwitchToAdminHome, [&](){
+        ad.show();
+        adStation.hide();
+    });
+    QObject::connect(&adStation, &AdminManageMetroAddStation::SwitchToLogin, [&](){
+        lp.show();
+        adStation.hide();
+    });
+    QObject::connect(&adStation, &AdminManageMetroAddStation::SwitchToMnageMetroOption, [&](){
+        admm.show();
+        adStation.hide();
+    });
+    QObject::connect(&ad, &Admin::SwitchToMangeMetro, [&](){
+        admm.show();
+        ad.hide();
+    });
+    QObject::connect(&admm, &AdminManageMetroOtions::SwitchToAdminHome, [&](){
+        ad.show();
+        admm.hide();
+    });
+    QObject::connect(&admm, &AdminManageMetroOtions::SwitchToLogin, [&](){
+        lp.show();
+        admm.hide();
+    });
+    QObject::connect(&admm, &AdminManageMetroOtions::SwitchToAddStation, [&](){
+        adStation.show();
+        admm.hide();
+    });
+/*
     // login page
     QObject::connect(&lp, &LoginPage::SwitchTOSignup, [&](){
         sp.show();
@@ -346,5 +397,6 @@ int main(int argc, char *argv[])
     });
 
     lp.show();
+*/
     return a.exec();
 }
