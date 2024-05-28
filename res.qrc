@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>img/16041_tn_eg-cairo-metro-line3-train-impression-hyundairotem.jpg</file>
+        <file>img/149071.png</file>
+        <file>img/422833-PE4141-817 (2).png</file>
+        <file>img/20221220_CairoMetroMap2.png</file>
+        <file>img/default_qrcode.png</file>
+        <file>img/down.png</file>
+        <file>img/download.png</file>
+        <file>img/health-report.png</file>
+        <file>img/home (1).png</file>
+        <file>img/infographic.png</file>
+        <file>img/left-arrow.png</file>
+        <file>img/location.png</file>
+        <file>img/man.png</file>
+        <file>img/map-point.png</file>
+        <file>img/one.png</file>
+        <file>img/reject.png</file>
+        <file>img/six.png</file>
+        <file>img/subway.png</file>
+        <file>img/three.png</file>
+        <file>img/ticket.png</file>
+        <file>img/train.png</file>
+        <file>img/entrance.png</file>
+        <file>img/files/Sub.txt</file>
+        <file>img/stations_name.txt</file>
+        <file>img/files/data_History.txt</file>
+        <file>img/files/data_staion.txt</file>
+        <file>img/files/testing.txt</file>
+        <file>img/files/testing_signed.txt</file>
+        <file>img/files/User_history.txt</file>
+        <file>img/6.jpg</file>
+        <file>img/8.jpg</file>
+        <file>img/12.jpg</file>
+        <file>img/15.jpg</file>
+        <file>img/into.gif</file>
+        <file>img/Cairo_2metro_logo2012.svg.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

@@ -1,0 +1,37 @@
+hanan,6,El-Maasara,Kozzika,35,7,13,15,5,2024
+nour,8,Sakanat El-Maadi,Giza,13,9,13,15,5,2024
+nour,6,Koleyet El-Banat,Abbassiya,13,9,13,15,5,2024
+nour,8,Hesham Barakat,Abbassiya,13,9,13,15,5,2024
+hager,6,Ain Helwan,Tora El-Asmant,56,32,19,13,5,2024
+hager,6,Helwan University,Hadayek Helwan,54,18,22,13,5,2024
+hager,12,Faisal,Alf Maskan,7,55,22,13,5,2024
+hager,8,Kobri El-Qobba,Mar Girgis,7,55,22,13,5,2024
+hager,6,Helwan University,Tora El-Balad,31,29,4,14,5,2024
+hager,6,Helwan University,Tora El-Balad,6,25,0,15,5,2024
+hager,6,Ain Helwan,El-Maasara,5,27,0,15,5,2024
+hager,6,Wadi Hof,Sakanat El-Maadi,24,28,0,15,5,2024
+hager,6,Ain Helwan,Kozzika,27,29,0,15,5,2024
+hager,6,Ain Helwan,Tora El-Balad,30,32,0,15,5,2024
+hager,6,Wadi Hof,Tora El-Balad,35,36,0,15,5,2024
+hager,6,Wadi Hof,El-Maasara,39,38,0,15,5,2024
+hager,6,Ain Helwan,Tora El-Balad,6,41,0,15,5,2024
+hager,6,Ain Helwan,Kozzika,16,42,0,15,5,2024
+hager,6,Ain Helwan,Kozzika,0,47,0,15,5,2024
+hager,8,Ain Helwan,El-Malek El-Saleh,59,47,0,15,5,2024
+hager,6,Ain Helwan,Kozzika,46,27,11,15,5,2024
+hager,6,Ain Helwan,Tora El-Asmant,51,58,12,15,5,2024
+heba,8,Ghamra,El-Mounib,22,13,13,15,5,2024
+heba,6,Abbassiya,Koleyet El-Banat,22,13,13,15,5,2024
+ali,6,Helwan,Wadi Hof,28,20,13,15,5,2024
+ali,6,Helwan,El-Maasara,28,20,13,15,5,2024
+ali,6,Helwan,Tora El-Balad,28,20,13,15,5,2024
+ali,12,Helwan,El-Shohada,28,20,13,15,5,2024
+John,6,Helwan,Tora El-Asmant,1,25,13,15,5,2024
+John,12,Helwan,Cairo University,1,25,13,15,5,2024
+John,12,Helwan,Opera,1,25,13,15,5,2024
+John,6,Orabi,Fair Zone,1,25,13,15,5,2024
+Mitsho,6,El-Maasara,Sakanat El-Maadi,2,6,14,15,5,2024
+Mitsho,6,Koleyet El-Banat,Abbassiya,2,6,14,15,5,2024
+Beshoy,8,Helmeyet El-Zaitoun,Abbassiya,10,14,15,15,5,2024
+Beshoy,6,Helwan,Wadi Hof,10,14,15,15,5,2024
+Beshoy,6,Helwan,Wadi Hof,10,14,15,15,5,2024
