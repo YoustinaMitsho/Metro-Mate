@@ -1,6 +1,6 @@
 # 🚇 MetroMate
 
-**MetroMate** is a console-based application designed to simulate a metro system, providing both user and admin functionalities. It was developed by a team of 6 members using C++ and QT, with extensive use of data structures. The system focuses on metro subscription management, fare calculation, and ride tracking.
+**MetroMate** is an application designed to simulate a metro system, providing both user and admin functionalities. It was developed by a team of 6 members using C++ and QT, with extensive use of data structures. The system focuses on metro subscription management, fare calculation, and ride tracking.
 
 ## 📜 Overview
 
@@ -45,17 +45,19 @@ MetroMate offers users the ability to manage their rides and subscriptions, whil
 - **Technologies**: C++ and QT framework.
 
 ## 📝 Evaluation
+
 The project will be evaluated based on the use of appropriate data structures, clean code, and the ability to explain design choices. Additional features like real-time system visualization, train management, and statistical reports may contribute to extra points.
 
 ## 🌟 Bonus Opportunities
+
 GUI implementation
-Zone-based subscriptions instead of stages
 Train management and scheduling
-Real-time system visualization with crowd simulation
+
 ## 💻 Development Tools
+
 Use at least 3 different data structures.
-File streams or databases are supported for data management.
-Built-in libraries (STL) are allowed.
+File streams are supported for data management.
+Built-in libraries (STL) are used.
 
 ## Possible errors:
 change the files locations (only files) to the location in your pc example: " D:/Qt/Metro-Mate/img/files/file_name.txt " because there was an error uploding the txt files to qres files in QT.
